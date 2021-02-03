@@ -30,17 +30,26 @@ Enable Symbl for Zoom calls.
  * [Community](#community)
 
 ## Setup 
-The first step to getting setup is to [sign up][signup]. 
+
+You will find the core of the application in `index.js`.
+
+The first step to getting setup is to [sign up][signup] and grab your `appId` and `appToken` from the Symbl Platform page. Replace lines 4 and 5 with those values. Afterward, you want to create your Zoom meeting and grab the Zoom Meeting ID and Zoom Meeting Passcode, if any. Replace lines 10 and 11 with those values. Put your email address as a string into the array on line 25.
+
+Install the Symbl Javascript SDK using `npm install sybml-node`.
 
 ## Integration 
 
+Start up your Zoom call and run the application using `node index.js`. If successful the application will start the connection to the Symbl API and begin dialing into your Zoom call. Be patient, as Symbl can sometimes take up to a minute to connect to your call. Once connected Zoom will notify you that Symbl is trying to connect. 
+
 ## Conclusion 
+
+After the call is finished Symbl will send you a summary email (to the email specified earlier) detailing the conversation.
 
 ## Community 
 
 If you have any questions, feel free to reach out to us at devrelations@symbl.ai or through our [Community Slack][slack] or our [developer community][developer_community]. 
 
-This guide is actively developed, and we love to hear from you! Please feel free to [create an issue][issues] or [open a pull request][pulls] with your questions, comments, suggestions and feedback. If you liked our integration guide, please star our repo!
+This guide is actively developed, and we love to hear from you! Please feel free to [create an issue][issues] or [open a pull request][github.com/symblai/connect-symbl-to-zoom-without-ui/pulls] with your questions, comments, suggestions and feedback. If you liked our integration guide, please star our repo!
 
 
 This library is released under the [MIT License][license]
