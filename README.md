@@ -38,7 +38,7 @@ The first step to getting setup is to [sign up][signup].
 
 ## Community 
 
-If you have any questions, feel free to reach out to us at devrelations@symbl.ai or through our Community Slack at https://developer.symbl.ai/community/slack or our [developer community][developer_community]. 
+If you have any questions, feel free to reach out to us at devrelations@symbl.ai or through our [Community Slack][slack] or our [developer community][developer_community]. 
 
 This guide is actively developed, and we love to hear from you! Please feel free to [create an issue][issues] or [open a pull request][pulls] with your questions, comments, suggestions and feedback. If you liked our integration guide, please star our repo!
 
