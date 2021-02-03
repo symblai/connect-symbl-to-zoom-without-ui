@@ -37,13 +37,13 @@ The first step to getting setup is to [sign up][signup] and grab your `appId` an
 
 Install the Symbl Javascript SDK using 
 
-```npm install sybml-node```.
+```npm install sybml-node```
 
 ## Integration 
 
 Start up your Zoom call and run the application using 
 
-```node index.js```. 
+```node index.js```
 
 If successful the application will start the connection to the Symbl API and begin dialing into your Zoom call. Be patient, as Symbl can sometimes take up to a minute to connect to your call. Once connected Zoom will notify you that Symbl is trying to connect. 
 
