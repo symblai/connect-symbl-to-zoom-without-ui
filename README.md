@@ -1,7 +1,7 @@
 Symbl for Zoom in Terminal w/o UI
 ============================
 
-[![Websocket](https://img.shields.io/badge/symbl-websocket-brightgreen)](https://docs.symbl.ai/docs/streamingapi/overview/introduction)
+[![Telephony](https://img.shields.io/badge/symbl-telephony-brightgreen)](https://docs.symbl.ai/docs/telephony/overview/post-api/)
 
 Connect Symbl to your Zoom call through the Terminal without a UI
 
