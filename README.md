@@ -35,11 +35,11 @@ You will find the core of the application in `index.js`.
 
 The first step to getting setup is to [sign up][signup] and grab your `appId` and `appToken` from the Symbl Platform page. Replace lines 4 and 5 with those values. Afterward, you want to create your Zoom meeting and grab the Zoom Meeting ID and Zoom Meeting Passcode, if any. Replace lines 10 and 11 with those values. Put your email address as a string into the array on line 25.
 
-Install the Symbl Javascript SDK using `npm install sybml-node`.
+Install the Symbl Javascript SDK using ```npm install sybml-node```.
 
 ## Integration 
 
-Start up your Zoom call and run the application using `node index.js`. If successful the application will start the connection to the Symbl API and begin dialing into your Zoom call. Be patient, as Symbl can sometimes take up to a minute to connect to your call. Once connected Zoom will notify you that Symbl is trying to connect. 
+Start up your Zoom call and run the application using ```node index.js```. If successful the application will start the connection to the Symbl API and begin dialing into your Zoom call. Be patient, as Symbl can sometimes take up to a minute to connect to your call. Once connected Zoom will notify you that Symbl is trying to connect. 
 
 ## Conclusion 
 
