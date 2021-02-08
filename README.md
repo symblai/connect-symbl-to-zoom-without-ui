@@ -1,12 +1,9 @@
-Symbl for Zoom in Terminal w/o UI
+Symbl.a for Zoom in Terminal w/o UI
 ============================
 
 [![Telephony](https://img.shields.io/badge/symbl-telephony-brightgreen)](https://docs.symbl.ai/docs/telephony/overview/post-api/)
 
 Connect Symbl to your Zoom call through the Terminal without a UI
-
-
-============================
 
 
 Symbl's APIs empower developers to enable: 
@@ -18,9 +15,7 @@ Symbl's APIs empower developers to enable:
 
 <hr />
 
-# Your Integration Guide's Purpose 
-
-Enable Symbl for Zoom calls. 
+# Symbl.ai for Zoom in Terminal w/o UI
 
 <hr />
 
@@ -37,7 +32,7 @@ The first step to getting setup is to [sign up][signup] and grab your `appId` an
 
 Install the Symbl Javascript SDK using 
 
-```npm install sybml-node```
+```npm install symbl-node```
 
 ## Integration 
 
