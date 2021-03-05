@@ -38,6 +38,7 @@ sdk.init({
       const connectionId = connection.connectionId;
       console.log("Successfully connected.", connectionId);
       console.log('Conversation ID', connection.conversationId);
+      console.log('Full Conection Object', JSON.stringify(connection, null, 2));
       console.log("Calling into Zoom now, please wait.");
     })
     .catch((err) => {
