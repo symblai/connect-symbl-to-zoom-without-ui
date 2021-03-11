@@ -1,6 +1,14 @@
 const {sdk, SpeakerEvent} = require("symbl-node");
 const appId = appId;
 const appSecret = appSecret;
+const phoneNumber = "ZOOM_PHONE_NUMBER"; // US Zoom Numbers are "+16465588656", or "+14086380968".
+const meetingName = "Zoom Test Meeting";
+const emailAddress = "user@example.com";
+
+const DTMF_MEETING_ID = "ZOOM_MEETING_ID";
+const DTMF_MEETING_PASSCODE = "ZOOM_MEETING_PASSCODE";
+const dtmfSequence = `,,${DTMF_MEETING_ID}#,,${DTMF_MEETING_PASSCODE}#`;
+
 
 sdk.init({
   appId: appId,
@@ -9,10 +17,6 @@ sdk.init({
 }).then(async() => {
   console.log('SDK initialized.');
   try {
-    const DTMF_MEETING_ID = "ZOOM_MEETING_ID";
-    const DTMF_MEETING_PASSCODE = "ZOOM_MEETING_PASSCODE";
-    const dtmfSequence = `,,${DTMF_MEETING_ID}#,,${DTMF_MEETING_PASSCODE}#`;
-    const phoneNumber = "ZOOM_PHONE_NUMBER"; // US Zoom Numbers are "+16465588656", or "+14086380968".
 
     sdk.startEndpoint({
       endpoint: {
@@ -25,7 +29,9 @@ sdk.init({
           invokeOn: "stop",
           name: "sendSummaryEmail",
           parameters: {
-            emails: [EMAIL_ADDRESS],
+            emails: [
+              emailAddress
+            ],
           },
         },
       ],
@@ -38,8 +44,8 @@ sdk.init({
       const connectionId = connection.connectionId;
       console.log("Successfully connected.", connectionId);
       console.log('Conversation ID', connection.conversationId);
-      console.log('Full Conection Object', JSON.stringify(connection, null, 2));
-      console.log("Calling into Zoom now, please wait.");
+      console.log('Full Conection Object', connection);
+      console.log("Calling into Zoom now, please wait about 30-60 seconds.");
     })
     .catch((err) => {
        console.error("Error while starting the connection", err);
