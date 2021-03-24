@@ -1,13 +1,25 @@
 const {sdk, SpeakerEvent} = require("symbl-node");
-const appId = appId;
-const appSecret = appSecret;
-const phoneNumber = "ZOOM_PHONE_NUMBER"; // US Zoom Numbers are "+16465588656", or "+14086380968".
+const appId = "";
+const appSecret = "";
+const phoneNumber = ""; // US Zoom Numbers are "+16465588656", or "+14086380968".
 const meetingName = "Zoom Test Meeting";
 const emailAddress = "user@example.com";
 
-const DTMF_MEETING_ID = "ZOOM_MEETING_ID";
-const DTMF_MEETING_PASSCODE = "ZOOM_MEETING_PASSCODE";
-const dtmfSequence = `,,${DTMF_MEETING_ID}#,,${DTMF_MEETING_PASSCODE}#`;
+const ZOOM_MEETING_ID = "ZOOM_MEETING_ID";
+const ZOOM_PARTICIPANT_ID = "";
+const ZOOM_MEETING_PASSCODE = "";
+
+let dtmfSequence = `${ZOOM_MEETING_ID}#`;
+
+if (ZOOM_PARTICIPANT_ID) {
+  dtmfSequence += `,,${ZOOM_PARTICIPANT_ID}#`;
+} else {
+  dtmfSequence += `,,#`;
+}
+
+if (ZOOM_MEETING_PASSCODE) {
+  dtmfSequence += `,,${ZOOM_MEETING_PASSCODE}#`;
+}
 
 
 sdk.init({
